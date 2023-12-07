@@ -1,0 +1,544 @@
+.h2o-icon{
+  
+  &-logo{
+    background-image: url(../img/sprite/logo.svg);
+    width: 68px;
+    height: 31px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  &-clock{
+    background-image: url(../img/sprite/icon.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 76px;
+    height: 96px;
+    display: block;
+  }
+
+  &-coin{
+    background-image: url(../img/sprite/icon2.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 78px;
+    height: 96px;
+    display: block;
+  }
+
+  &-gift{
+    background-image: url(../img/sprite/icon3.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 85px;
+    height: 96px;
+    display: block;
+  }
+
+  &-slots{
+    background-image: url(../img/sprite/icon4.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95px;
+    height: 96px;
+    display: block;
+  }
+
+  &-money{
+    background-image: url(../img/sprite/icon5.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 82px;
+    height: 96px;
+    display: block;
+  }
+
+  &-man{
+    background-image: url(../img/sprite/man.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+
+  &-bag{
+    background-image: url(../img/sprite/bag.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+
+  &-darts{
+    background-image: url(../img/sprite/darts.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+
+  &-reward{
+    background-image: url(../img/sprite/reward.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 36px;
+    height: 36px;
+    display: block;
+  }
+
+
+
+
+
+
+
+
+  &-star{
+    background-image: url(../img/sprite/star.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 13px;
+    height: 13px;
+    display: block;
+  }
+
+  &-fifa{
+    background-image: url(../img/sprite/fifa.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 76px;
+    height: 25px;
+    display: block;
+  }
+
+  &-atp{
+    background-image: url(../img/sprite/atp.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 25px;
+    display: block;
+  }
+
+  &-nhl{
+    background-image: url(../img/sprite/nhl.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    display: block;
+  }
+
+  &-fiba{
+    background-image: url(../img/sprite/fiba.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 55px;
+    height: 25px;
+    display: block;
+  }
+
+  &-wta{
+    background-image: url(../img/sprite/wta.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33px;
+    height: 25px;
+    display: block;
+  }
+
+  &-ufc{
+    background-image: url(../img/sprite/ufc.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 75px;
+    height: 25px;
+    display: block;
+  }
+
+  &-uefa{
+    background-image: url(../img/sprite/uefa.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 61px;
+    height: 25px;
+    display: block;
+  }
+
+  &-bookmaker{
+    background-image: url(../img/sprite/bookmaker.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 42px;
+    height: 42px;
+    display: block;
+  }
+
+  &-itf{
+    background-image: url(../img/sprite/itf.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 56px;
+    height: 25px;
+    display: block;
+  }
+
+  &-visa{
+    background-image: url(../img/sprite/visa.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 57px;
+    height: 19px;
+    display: block;
+  }
+
+  &-master{
+    background-image: url(../img/sprite/visa.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 57px;
+    height: 19px;
+    display: block;
+  }
+
+  &-tg{
+    background-image: url(../img/sprite/tg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 15px;
+    display: block;
+  }
+
+  &-youtube{
+    background-image: url(../img/sprite/youtube.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 15px;
+    display: block;
+  }
+
+  &-mob{
+    background-image: url(../img/sprite/mob.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 20px;
+    display: block;
+  }
+
+  &-mono{
+    background-image: url(../img/sprite/mono.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 19px;
+    height: 19px;
+    display: block;
+  }
+
+  &-discover{
+    background-image: url(../img/sprite/discover.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 99px;
+    height: 19px;
+    display: block;
+  }
+
+  &-scb{
+    background-image: url(../img/sprite/scb.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 19px;
+    display: block;
+  }
+
+  &-much{
+    background-image: url(../img/sprite/much.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 84px;
+    height: 19px;
+    display: block;
+  }
+
+  &-webmoney{
+    background-image: url(../img/sprite/webmoney.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 84px;
+    height: 19px;
+    display: block;
+  }
+
+  &-fk{
+    background-image: url(../img/sprite/fk.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21px;
+    height: 19px;
+    display: block;
+  }
+
+  &-flower{
+    background-image: url(../img/sprite/flower.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  &-payeer{
+    background-image: url(../img/sprite/payeer.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 77px;
+    height: 19px;
+    display: block;
+  }
+
+  &-skrill{
+    background-image: url(../img/sprite/skrill.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 62px;
+    height: 19px;
+    display: block;
+  }
+
+  &-tether{
+    background-image: url(../img/sprite/tether.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 61px;
+    height: 19px;
+    display: block;
+  }
+
+  &-eth{
+    background-image: url(../img/sprite/eth.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 19px;
+    display: block;
+  }
+
+  &-qiwi{
+    background-image: url(../img/sprite/qiwi.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 43px;
+    height: 19px;
+    display: block;
+  }
+
+  &-btc{
+    background-image: url(../img/sprite/btc.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 21px;
+    height: 19px;
+    display: block;
+  }
+
+  &-pay{
+    background-image: url(../img/sprite/pay.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 47px;
+    height: 19px;
+    display: block;
+  }
+
+  &-gpay{
+    background-image: url(../img/sprite/gpay.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 48px;
+    height: 19px;
+    display: block;
+  }
+
+  &-master{
+    background-image: url(../img/sprite/master.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 31px;
+    height: 16px;
+    display: block;
+  }
+
+  &-astro{
+    background-image: url(../img/sprite/astro.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 91px;
+    height: 19px;
+    display: block;
+  }
+
+  &-download{
+    background-image: url(../img/sprite/download.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    display: block;
+  }
+
+  &-vk{
+    background-image: url(../img/sprite/vk.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 21px;
+    display: block;
+  }
+
+  &-inst{
+    background-image: url(../img/sprite/inst.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 22px;
+    height: 21px;
+    display: block;
+  }
+
+
+
+  &-betraja{
+    background-image: url(../img/index/betraja.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 25px;
+    width: 25px;
+  }
+
+  &-mentor{
+    background-image: url(../img/index/mentor.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 25px;
+    width: 86px;
+  }
+
+  &-best{
+    background-image: url(../img/index/best.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 25px;
+    width: 25px;
+  }
+
+  &-analyzer{
+    background-image: url(../img/index/analyzer.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 25px;
+    width: 91px;
+  }
+  
+  
+  &-cricket{
+    background-image: url(../img/index/cricket.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 25px;
+    width: 22px;
+  }
+
+  &-betting{
+    background-image: url(../img/index/betting.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 25px;
+    width: 25px;
+  }
+
+  &-jackpot{
+    background-image: url(../img/index/icon1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    height: 11px;
+    width: clamp(170px, 20.2083vw, 291px);
+  }
+
+   &-acc{
+    background-image: url(../img/sprite/arrow-b.svg);
+    background-position: center  center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 28px;
+    height: 14px;
+    display: block;
+  }
+
+
+}

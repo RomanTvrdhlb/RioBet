@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+    <section class="h2o-first-section">
+      <div class="h2o-container">
+        <div class="h2o-first-section__box">
+          <div class="h2o-main-slider splide">
+            <div class="h2o-main-slider__wrapp splide__track">
+              <ul class="h2o-main-slider__list splide__list">
+                <li class="h2o-main-slider__slide splide__slide">
+                  <div class="h2o-main-slider__box">
+                    <div class="h2o-main-slider__image">
+                      <img src="" alt="image">
+                    </div>
+                    <div class="h2o-main-slider__picture">
+                      <img src="" alt="image">
+                    </div>
+                    <p>Призовой фонд</p>
+                    <span class="h2o-main-slider__value">2 000 000 <b class="h2o-main-slider__currency">$</b></span>
+                  </div>
+                </li>
+                <li class="h2o-main-slider__slide splide__slide">
+                  <div class="h2o-main-slider__box">
+                    <div class="h2o-main-slider__image">
+                      <img src="" alt="image">
+                    </div>
+                    <div class="h2o-main-slider__picture">
+                      <img src="" alt="image">
+                    </div>
+                    <button class="h2o-api h2o-green-button">Получить</button>
+                    <span class="h2o-main-slider__info">
+                      <i class="h2o-icon-tourn"></i>Турнир/дропы
+                    </span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <ul class="h2o-players-block">
+            <li class="h2o-players-block__item">
+              <div class="h2o-players-block__row">
+                <span class="h2o-players-block__icon"><i class="h2o-icon-man"></i>
+                </span>
+                <span class="h2o-players-block__text">Игроков онлайн</span>
+                <span class="h2o-players-block__value">1217</span>
+              </div>
+            </li>
+            <li class="h2o-players-block__item">
+              <div class="h2o-players-block__row">
+                <span class="h2o-players-block__icon"><i class="h2o-icon-bag"></i>
+                </span>
+                <span class="h2o-players-block__text">Среднее время выплаты</span>
+                <span class="h2o-players-block__value">23 мин 27 сек</span>
+              </div>
+            </li>
+            <li class="h2o-players-block__item">
+              <div class="h2o-players-block__row">
+                <span class="h2o-players-block__icon"><i class="h2o-icon-darts"></i>
+                </span>
+                <span class="h2o-players-block__text">Топ выигрыш за сегодня</span>
+                <span class="h2o-players-block__value">4 636 $</span>
+              </div>
+            </li>
+            <li class="h2o-players-block__item">
+              <div class="h2o-players-block__row">
+                <span class="h2o-players-block__icon"><i class="h2o-icon-reward"></i>
+                </span>
+                <span class="h2o-players-block__text">Разыгрывается в турнирах</span>
+                <span class="h2o-players-block__value">11 010 834 $</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="h2o-games-section">
+      <div class="h2o-container">
+        <div class="h2o-games-section__box">
+          <div class="h2o-main-top">
+            <h1 class="h2o-main-top__title">Все игры</h1>
+            <span class="h2o-main-top__count">18</span>
+          </div>
+
+          <ul class="h2o-games-list">
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game1.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game2.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game3.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game4.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game5.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game6.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game7.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game8.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game9.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game10.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game11.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game12.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game13.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game14.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game15.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game16.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game17.png" alt="image">
+                </div>
+              </a>
+            </li>
+            <li class="h2o-games-list__item">
+              <a href="#" class="h2o-game-card">
+                <div class="h2o-game-card__image">
+                  <img width="240" height="180" src="static/img/index/game18.png" alt="image">
+                </div>
+              </a>
+            </li>
+          </ul>
+          <button class="h2o-login h2o-info-button h2o-info-button--orange">Все игры</button>
+
+
+        </div>
+      </div>
+    </section> -->
+
+    <section class="h2o-casino-section">
+      <div class="h2o-container">
+        <div class="h2o-casino-section__box">
+          <div class="h2o-casino-section__inner">
+            <div class="h2o-main-top">
+              <h3 class="h2o-main-top__title">Джекпоты</h3>
+              <button class="h2o-api h2o-main-top__link">все 242</button>
+            </div>
+            <div class="h2o-jackpot-slider splide">
+              <div class="h2o-jackpot-slider__wrapp splide__track">
+                <ul class="h2o-jackpot-slider__list splide__list">
+                  <li class="h2o-jackpot-slider__slide splide__slide">
+                    <div class="h2o-jackpot-card">
+                      <div class="h2o-jackpot-card__image">
+                        <img width="337" height="376" src="static/img/index/divine.png" alt="image">
+                      </div>
+                      <span class="h2o-jackpot-card__value">
+                        1 999 609 <b class="h2o-jackpot-card__currency">$</b>
+                      </span>
+                      <button class="h2o-api h2o-green-button">Испытать удачу</button>
+                    </div>
+                  </li>
+                  <li class="h2o-jackpot-slider__slide splide__slide">
+                    <div class="h2o-jackpot-card h2o-jackpot-card--blue">
+                      <div class="h2o-jackpot-card__image">
+                        <img width="337" height="376" src="static/img/index/holmes.png" alt="image">
+                      </div>
+                      <span class="h2o-jackpot-card__value">
+                        11 345 678 <b class="h2o-jackpot-card__currency">$</b>
+                      </span>
+                      <button class="h2o-api h2o-green-button">Испытать удачу</button>
+                    </div>
+                  </li>
+                  <li class="h2o-jackpot-slider__slide splide__slide">
+                    <div class="h2o-jackpot-card h2o-jackpot-card--red">
+                      <div class="h2o-jackpot-card__image">
+                        <img width="337" height="376" src="static/img/index/crown.png" alt="image">
+                      </div>
+                      <span class="h2o-jackpot-card__value">
+                        1 747 674 <b class="h2o-jackpot-card__currency">$</b>
+                      </span>
+                      <button class="h2o-api h2o-green-button">Испытать удачу</button>
+                    </div>
+                  </li>
+                  <li class="h2o-jackpot-slider__slide splide__slide">
+                    <div class="h2o-jackpot-card h2o-jackpot-card--brown">
+                      <div class="h2o-jackpot-card__image">
+                        <img width="337" height="376" src="static/img/index/buffalo.png" alt="image">
+                      </div>
+                      <span class="h2o-jackpot-card__value">
+                        1 996 699 <b class="h2o-jackpot-card__currency">$</b>
+                      </span>
+                      <button class="h2o-api h2o-green-button">Испытать удачу</button>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="h2o-casino-section__inner">
+            <div class="h2o-main-top">
+              <span class="h2o-main-top__title">Как начать играть</span>
+            </div>
+
+            <ul class="h2o-tutorial-list">
+              <li class="h2o-tutorial-list__item">
+                <div class="h2o-tutorial-card">
+                  <span class="h2o-tutorial-card__icon"><i class="h2o-icon-clock"></i>
+
+                    <span class="h2o-tutorial-card__amount">1</span>
+                  </span>
+                  <span class="h2o-tutorial-card__title">Зарегистрируйтесь</span>
+                  <button class="h2o-api h2o-yellow-button">Начать</button>
+                </div>
+              </li>
+              <li class="h2o-tutorial-list__item">
+                <div class="h2o-tutorial-card h2o-tutorial-card--disabled">
+                  <span class="h2o-tutorial-card__icon"><i class="h2o-icon-coin"></i>
+                    <span class="h2o-tutorial-card__amount">2</span>
+                  </span>
+                  <span class="h2o-tutorial-card__title">Сделайте депозит</span>
+                  <button class="h2o-api h2o-yellow-button">Начать</button>
+                </div>
+              </li>
+              <li class="h2o-tutorial-list__item">
+                <div class="h2o-tutorial-card h2o-tutorial-card--disabled">
+                  <span class="h2o-tutorial-card__icon"><i class="h2o-icon-gift"></i>
+                    <span class="h2o-tutorial-card__amount">3</span>
+                  </span>
+                  <span class="h2o-tutorial-card__title">Получите фриспины</span>
+                  <button class="h2o-api h2o-yellow-button">Начать</button>
+                </div>
+              </li>
+              <li class="h2o-tutorial-list__item">
+                <div class="h2o-tutorial-card h2o-tutorial-card--disabled">
+                  <span class="h2o-tutorial-card__icon"><i class="h2o-icon-slots"></i>
+                    <span class="h2o-tutorial-card__amount">4</span>
+                  </span>
+                  <span class="h2o-tutorial-card__title">Играйте и выигрывайте</span>
+                  <button class="h2o-api h2o-yellow-button">Начать</button>
+                </div>
+              </li>
+              <li class="h2o-tutorial-list__item">
+                <div class="h2o-tutorial-card h2o-tutorial-card--disabled">
+                  <span class="h2o-tutorial-card__icon"><i class="h2o-icon-money"></i>
+                    <span class="h2o-tutorial-card__amount">5</span>
+                  </span>
+                  <span class="h2o-tutorial-card__title">Выводите за 15 минут</span>
+                  <button class="h2o-api h2o-yellow-button">Начать</button>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+         
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="h2o-about-section">
+      <div class="h2o-container">
+        <div class="h2o-about-section__box">
+          <div class="h2o-about-section__inner">
+            <h1 class="h2o-main-title">Бонус на депозит до 500%</h1>
+            <div class="h2o-main-box h2o-main-box--mode">
+              <p>Букмекерская компания «1win» предоставляет игрокам бонус на первые четыре депозита суммарно до 500%.
+                Бонусы зачисляются как на бонусный счёт для ставок, так и на бонусный счет для казино.</p>
+              <p>За первый депозит игрок получает на свои бонусные счета ставок и казино 200% от суммы первого
+                пополнения.</p>
+              <p>За второй депозит игрок получает на свои бонусные счета ставок и казино 150% от суммы второго
+                пополнения.</p>
+              <p>За третий депозит игрок получает на свои бонусные счета ставок и казино 100% от суммы третьего
+                пополнения.</p>
+              <p>За четвертый депозит игрок получает на свои бонусные счета ставок и казино 50% от суммы четвертого
+                пополнения.</p>
+              <p>Максимальная сумма бонуса за каждый депозит составляет 75 000₽ на каждый бонусный счет. (Всего за
+                первые четыре депозита игрок максимально может получить на бонусный счет казино и на бонусный счет
+                ставок до 200 000₽).</p>
+              <span class="h2o-main-subtitle">Пример:</span>
+              <p>После регистрации игрок совершает депозит на сумму 15 000₽, система автоматически выдает игроку бонус в
+                размере 200% от суммы депозита.</p>
+              <p>Основной счет: 15 000₽ / Бонусный счет казино: 30 000₽.</p>
+              <p>Затем игрок совершает депозит на 10 000₽, за второй депозит игрок получает бонус 150%.</p>
+            </div>
+          </div>
+
+          <div class="h2o-about-section__inner">
+            <span class="h2o-main-title">Фриспины за депозит</span>
+            <div class="h2o-main-box">
+              <p>Каждый представленный на портале слот многократно проверен и отобран из огромного множества различных
+                гаминаторов. Игорный клуб Лев очень дорожит вниманием своих клиентов, поэтому предлагает только самые
+                качественные и прибыльные по отдаче(RTP) разработки от именитых мировых брендов: Igrosoft, Novomatic,
+                Microgaming, Netent, Mega Jack, Endorphina, EGT. Здесь можно встретить популярные во всем мире
+                эмуляторы, которые уже много лет дарят радость и прибыль для миллионов гэмблеров в разных концах
+                планеты. Только Игорного клуба Лев может превратить ваш досуг в заработок. Достаточно всего лишь
+                зарегистрироваться, выбрать стратегию и положиться на удачу и свои навыки, чтобы сорвать крупный куш и
+                массу положительных эмоций в бонусной игре.</p>
+              <p>Все имеющиеся на официальном сайте и его зеркалах эмуляторы можно условно разделить на несколько типов:
+              </p>
+
+              <ul class="h2o-text-list">
+                <li class="h2o-text-list__item">
+                  <p>Cрок отыгрыша выигранных средств истекает через 24 часа после
+
+                    выигрыша. </p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>гаминаторы в классическом стиле на фруктовую тематику, например, Fruit Cocktail;</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Бонусом можно воспользоваться в течение 2 дней после
+
+                    активации.</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>простые мультяшные на разные темы, например: Crazy Monkey, Aloha, Always Hot;</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Бонусом можно воспользоваться в течение 2 дней после
+
+                    активации.</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Выигрыш за фриспины отображается на сайте в бонусном счете.</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>На выигрыш накладывается вейджер х50 от суммы выигрыша.</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Выигрыш за фриспины отображается на сайте в бонусном счете.</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>По завершению акции все фриспины, которые не отыграны, либо
+                    активны и не потрачены - аннулируются.</p>
+                </li>
+              </ul>
+
+              <p>Дополнительные возможности для заработка предлагают специальные функции: фриспины, бонусы, миниигры,
+                вспомогательные раунды, риск-игры и т.д. Регистрируйтесь, пополняйте счет и вперед к победам!</p>
+            </div>
+          </div>
+
+          <div class="h2o-about-section__inner">
+            <span class="h2o-main-title">Популярные карточные игры казино Клуба</span>
+            <div class="h2o-main-box">
+              <p>Если клиент казино Клуба часто посещает барабанные игровые автоматы и хочет попробовать что-то новое,
+                ему следует обратить внимание на карточные игры. Эта область предоставляет большой простор для
+                творчества разработчикам, поэтому они не стесняются реализовывать свои самые смелые фантазии. Клуб
+                содержит большой выбор в этой сфере, любой сможет найти подходящий проект, за которым проведет много
+                времени, причем имеется не только покер, но и другие жанры. Онлайн слоты <a href="#"
+                  class="h2o-main-link">казино Клуба</a> обладают высоким
+                качеством и предоставляют свободу в плане заработка.</p>
+              <div class="h2o-main-box__image h2o-main-box__image--mode">
+                <img width="900" height="511" src="/static/img/index/slide11.png" alt="image">
+              </div>
+            </div>
+          </div>
+
+          <div class="h2o-about-section__inner">
+            <span class="h2o-main-title">Бонус на депозит до 500%</span>
+            <div class="h2o-main-box">
+              <p>Мы ожидаем, что каждый из наших пользователей будет проявлять ответственность во время игры. Однако мы
+                обращаем ваше внимание на то, что решение пользоваться Услугами целиком лежит на вас, и вы делаете это
+                исключительно по собственному выбору, усмотрению и на свой собственный риск. Пользуясь Игровыми
+                Услугами, вы подтверждаете, что в полной мере осознаете, что существует риск потери денежных средств в
+                процессе игры и вы несете полную ответственность за любые такие потери. Пользуясь Игровыми Услугами, вы
+                подтверждаете, что у вас нет и не будет каких-либо претензий к нам или к любому из наших партнеров,
+                директоров, должностных лиц или сотрудников относительно вашей игры и проигрышей.
+              </p>
+              <p>Посещая любую часть Веб-сайта или открывая игровую учетную запись, вы соглашаетесь со всеми пунктами
+                Пользовательского Соглашения (далее именуемого Соглашением), Политикой конфиденциальности, условиями
+                рекламной деятельности, правилами ставок, бонусов и специальных предложений доступными на Веб-сайте.
+                Перед принятием условий Соглашения необходимо внимательно ознакомиться со всеми его пунктами. Если вы не
+                согласны с данным Соглашением, вы должны прекратить пользоваться Веб-сайтом. Любое последующее
+                использование Веб-сайта будет рассматриваться как ваше согласие со всеми пунктами данного Соглашения.
+              </p>
+
+              <ul class="h2o-text-list">
+                <li class="h2o-text-list__item">
+                  <p>Net Entertainment;</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Williams Interactive;</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Playson;</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Novomatic;</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Igrosoft;</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p>Playtech и другими!</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="h2o-about-section__inner h2o-about-section__inner--mode">
+            <div class="h2o-main-box">
+              <span class="h2o-main-subtitle">Как накапливать баллы?</span>
+              <p>Баллы автоматически пополняются после каждой ставки в слотах (игровых автоматах) на реальные деньги,
+                независимо от её результата. Больше ставок – больше баллов. Баллы не накапливаются со ставок в рулетке
+                или карточных играх.</p>
+            </div>
+            <div class="h2o-main-box">
+              <span class="h2o-main-subtitle">Как узнать, сколько у меня баллов?</span>
+              <p>В веб-версии сайта сумма баллов отображается в строке «Баллы». Она находится левом верхнем углу
+                страницы, рядом со строчками «Возврат» и «Билеты». В мобильной версии сайта – в самой верхней части
+                бокового меню. Также сумму накопленных баллов можно увидеть в «Кассе».</p>
+            </div>
+            <div class="h2o-main-box">
+              <span class="h2o-main-subtitle">Как перевести баллы на игровой счет?</span>
+              <p>Обменять на деньги можно любое количество баллов. Для этого зайдите в раздел «Касса» – «Обменять баллы»
+                и введите сумму баллов, которую хотите обменять. Деньги сразу зачислятся на ваш бонусный счет.</p>
+              <p>Небольшая хитрость: чем больше баллов вы меняете, тем выгоднее курс обмена. Например, при обмене 100
+                баллов вы получите 10 рублей (курс 0,1), а при обмене 1000 баллов – 120 рублей (курс 0,12). И так далее.
+              </p>
+
+            </div>
+            <p>Собирайте баллы, пополняйте ими игровой баланс и наслаждайтесь игрой!</p>
+          </div>
+
+          <div class="h2o-about-section__inner">
+            <span class="h2o-main-title">Условия возврата</span>
+            <div class="h2o-main-box">
+
+              <div class="h2o-main-box__image">
+                <img width="900" height="511" src="/static/img/index/slide1.png" alt="image">
+              </div>
+              <p>После регистрации игрок совершает депозит на сумму 15 000₽, система автоматически выдает игроку бонус в
+                размере 200% от суммы депозита.</p>
+
+              <ul class="h2o-text-list">
+                <li class="h2o-text-list__item">
+                  <p><b>Основной счет:</b> 25 000₽ / <b>Бонусный счет казино:</b> 45 000₽.
+                    Игрок за сутки проигрывает в <a href="#" class="h2o-main-link">казино</a> 5000₽.</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p><b>Основной счет:</b> 5 000₽ / <b>Бонусный счет казино:</b> 35 000₽.
+                    Игрок за сутки проигрывает в <a href="#" class="h2o-main-link">казино</a> 15000₽.</p>
+                </li>
+                <li class="h2o-text-list__item">
+                  <p><b>Основной счет:</b> 15 000₽ / <b>Бонусный счет казино:</b> 25 000₽.
+                    Игрок за сутки проигрывает в <a href="#" class="h2o-main-link">казино</a> 25000₽.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="h2o-about-section__inner h2o-about-section__inner--mode">
+            <div class="h2o-main-box h2o-main-box--mode">
+              <span class="h2o-main-subtitle">1. Основные положения
+              </span>
+              <p>1.1. Ставка – соглашение, касающееся выигрыша, заключаемое между клиентом и букмекерской компанией по
+                установленным правилам; в данном случае, исход соглашения зависит от события, которое неизвестно
+                произойдет или нет. Ставки от клиентов принимаются согласно условиям букмекерской компании. </p>
+
+              <table>
+                <thead>
+                  <tr>
+                    <th>Валюта</th>
+                    <th>Сумма</th>
+                    <th>Очки</th>
+                    <th>Мин.кол-во очков</th>
+                    <th>Сумма после обмена</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>USD</td>
+                    <td>605</td>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>EUR</td>
+                    <td>750</td>
+                    <td>1</td>
+                    <td>20</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>UAH</td>
+                    <td>66</td>
+                    <td>1</td>
+                    <td>120</td>
+                    <td>1000</td>
+                  </tr>
+                  <tr>
+                    <td>PLN</td>
+                    <td>105</td>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td>15000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="h2o-main-box h2o-main-box--mode">
+              <span class="h2o-main-subtitle">2. Основные правила приема ставок</span>
+              <p>2.1. Отмена ставки – событие, по которому не производятся расчет и выплата выигрыша. В случае «отмены
+                ставки», согласно условиям настоящего Соглашения, сделка между организатором и клиентом считается
+                незаключенной и по такой ставке производится возврат денежных средств. </p>
+            </div>
+            <div class="h2o-main-box">
+              <span class="h2o-main-subtitle">3. Виды ставок </span>
+              <p>3.1. Одиночная – ставка на определенный исход события. Выигрыш по одиночной ставке равен произведению суммы ставки на установленный для данного исхода коэффициент.</p>
+              <p>3.2. Экспресс – ставка на несколько независимых исходов событий. Выигрыш по экспрессу равен произведению суммы ставки на коэффициенты всех исходов, входящих в экспресс. Проигрыш по одному из исходов экспресса означает проигрыш по всему экспрессу. </p>
+              <p>3.3 Ограничения по включению некоторых исходов события </p>
+              <p>3.4  В экспресс можно включать только один из зависимых исходов. В случае включения в один экспресс двух и более зависимых событий, события с наименьшим коэффициентом исключаются из данного экспресса.</p>
+            </div>
+            <div class="h2o-main-box">
+              <span class="h2o-main-subtitle">Как отменить вывод?</span>
+              <p>Как отменить вывод средств, <a href="#" class="h2o-main-link">читайте здесь</a>.</p>
+            </div>
+            <div class="h2o-main-box">
+              <span class="h2o-main-subtitle">Вам предлагается ответить на 10 вопросов.</span>
+              <ol class="h2o-main-list">
+                <li class="h2o-main-list__item">
+                  <p>Вы серьезно вовлечены в азартные игры?</p>
+                </li>
+                <li class="h2o-main-list__item">
+                  <p>Суммы ваших пари постоянно увеличиваются?</p>
+                </li>
+                <li class="h2o-main-list__item">
+                  <p>Вы берете деньги взаймы, чтобы играть?</p>
+                </li>
+                <li class="h2o-main-list__item">
+                  <p>Вы часто играете дольше, чем планировали?</p>
+                </li>
+                <li class="h2o-main-list__item">
+                  <p>Вам часто приходится отыгрываться?</p>
+                </li>
+                <li class="h2o-main-list__item">
+                  <p>Вы не говорите о своем увлечении азартными играми близким?</p>
+                </li>
+                <li class="h2o-main-list__item">
+                  <p>Частое посещение букмекерской конторы негативно сказывается на вашей репутации?</p>
+                </li>
+                <li class="h2o-main-list__item">
+                  <p>Участие в азартных играх является для вас способом уйти от проблем? </p>
+                </li>
+              </ol>
+
+              <span class="h2o-main-subtitle">Дополнительная помощь онлайн</span>
+              <p>Некоторые благотворительные организации и ассоциации могут предоставить помощь:<br><a href="#" class="h2o-main-link">https://www.gamcare.org.uk </a><br><a href="#"
+                  class="h2o-main-link">https://www.gamblingtherapy.org/</a><br>
+                  <a href="#" class="h2o-main-link">https://www.gamblersanonymous.org.uk/</a></p>
+            </div>
+          </div>
+          <div class="h2o-about-section__inner">
+            <span class="h2o-main-title">FAQ</span>
+            <div class="h2o-main-box">
+              <ul class='h2o-accordion' data-single='true' data-breakpoint='576' data-accordion-init>
+                <li class='h2o-accordion__item'>
+                  <button class='h2o-accordion__button' data-id='1'>
+                    <span class="h2o-accordion__title">Основные положения</span>
+                    <span class="h2o-accordion__icon h2o-icon-acc"></span>
+                  </button>
+
+                  <div class='h2o-accordion__content' data-content='1'>
+                    <div class="h2o-accordion__box">
+                      <p>Ставка – соглашение, касающееся выигрыша, заключаемое между клиентом и букмекерской компанией по установленным правилам; в данном случае, исход соглашения зависит от события, которое неизвестно произойдет или нет. Ставки от клиентов принимаются согласно условиям букмекерской компании. </p>
+                      <p>Линия – совокупность событий, возможные исходы этих событий, коэффициенты на возможные исходы этих событий, их дата и время, после которых букмекерская компания прекращает прием ставок на исходы указанных событий.</p>
+                      <p>Клиент – лицо, делающее ставку в букмекерской компании на исход события.</p>
+                    </div>
+                  </div>
+                </li>
+                <li class='h2o-accordion__item'>
+                  <button class='h2o-accordion__button' data-id='2'>
+                    <span class="h2o-accordion__title">Виды ставок</span>
+                    <span class="h2o-accordion__icon h2o-icon-acc"></span>
+                  </button>
+                  <div class='h2o-accordion__content' data-content='2'>
+                    <div class="h2o-accordion__box">
+                      <p>Ставка – соглашение, касающееся выигрыша, заключаемое между клиентом и букмекерской компанией по установленным правилам; в данном случае, исход соглашения зависит от события, которое неизвестно произойдет или нет. Ставки от клиентов принимаются согласно условиям букмекерской компании. </p>
+                      <p>Линия – совокупность событий, возможные исходы этих событий, коэффициенты на возможные исходы этих событий, их дата и время, после которых букмекерская компания прекращает прием ставок на исходы указанных событий.</p>
+                      <p>Клиент – лицо, делающее ставку в букмекерской компании на исход события.</p>
+                    </div>
+                  </div>
+
+                </li>
+                <li class='h2o-accordion__item'>
+                  <button class='h2o-accordion__button' data-id='3'>
+                    <span class="h2o-accordion__title">Основные положения</span>
+                    <span class="h2o-accordion__icon h2o-icon-acc"></span>
+                  </button>
+
+                  <div class='h2o-accordion__content' data-content='3'>
+                    <div class="h2o-accordion__box">
+                      <p>Ставка – соглашение, касающееся выигрыша, заключаемое между клиентом и букмекерской компанией по установленным правилам; в данном случае, исход соглашения зависит от события, которое неизвестно произойдет или нет. Ставки от клиентов принимаются согласно условиям букмекерской компании. </p>
+                      <p>Линия – совокупность событий, возможные исходы этих событий, коэффициенты на возможные исходы этих событий, их дата и время, после которых букмекерская компания прекращает прием ставок на исходы указанных событий.</p>
+                      <p>Клиент – лицо, делающее ставку в букмекерской компании на исход события.</p>
+                    </div>
+
+                  </div>
+                </li>
+                <li class='h2o-accordion__item'>
+                  <button class='h2o-accordion__button' data-id='4'>
+                    <span class="h2o-accordion__title">Виды ставок</span>
+                    <span class="h2o-accordion__icon h2o-icon-acc"></span>
+                  </button>
+
+                  <div class='h2o-accordion__content' data-content='4'>
+                    <div class="h2o-accordion__box">
+                      <p>Ставка – соглашение, касающееся выигрыша, заключаемое между клиентом и букмекерской компанией по установленным правилам; в данном случае, исход соглашения зависит от события, которое неизвестно произойдет или нет. Ставки от клиентов принимаются согласно условиям букмекерской компании. </p>
+                      <p>Линия – совокупность событий, возможные исходы этих событий, коэффициенты на возможные исходы этих событий, их дата и время, после которых букмекерская компания прекращает прием ставок на исходы указанных событий.</p>
+                      <p>Клиент – лицо, делающее ставку в букмекерской компании на исход события.</p>
+                    </div>
+                  </div>
+
+                </li>
+                <li class='h2o-accordion__item'>
+                  <button class='h2o-accordion__button' data-id='5'>
+                    <span class="h2o-accordion__title">Основные положения</span>
+                    <span class="h2o-accordion__icon h2o-icon-acc"></span>
+                  </button>
+
+                  <div class='h2o-accordion__content' data-content='5'>
+                    <div class="h2o-accordion__box">
+                      <p>Ставка – соглашение, касающееся выигрыша, заключаемое между клиентом и букмекерской компанией по установленным правилам; в данном случае, исход соглашения зависит от события, которое неизвестно произойдет или нет. Ставки от клиентов принимаются согласно условиям букмекерской компании. </p>
+                      <p>Линия – совокупность событий, возможные исходы этих событий, коэффициенты на возможные исходы этих событий, их дата и время, после которых букмекерская компания прекращает прием ставок на исходы указанных событий.</p>
+                      <p>Клиент – лицо, делающее ставку в букмекерской компании на исход события.</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section> -->
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/overlay.html')
+
+  <script src="static/js/main.js"></script>
+</body>
+
+</html>

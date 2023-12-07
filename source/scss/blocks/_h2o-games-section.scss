@@ -1,0 +1,16 @@
+.h2o-games-section{
+    padding-bottom: clamp(20px, 1.6667vw, 24px);
+    position: relative;
+
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: 20px;  
+    }
+
+    .h2o-info-button{
+        margin-top: clamp(5px, 1.3889vw, 20px);
+        align-self: center;
+    }
+}

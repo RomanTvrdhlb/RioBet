@@ -1,0 +1,11 @@
+.h2o-first-section{
+    position: relative;
+    padding-bottom: clamp(16px, 1.6667vw, 24px);
+    
+    &__box{
+        display: grid;
+        grid-template-columns:1fr 274px;
+        grid-gap: 20px 15px;
+        position: relative;
+    }
+}

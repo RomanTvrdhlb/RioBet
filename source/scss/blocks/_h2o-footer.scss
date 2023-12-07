@@ -1,0 +1,112 @@
+footer{
+  padding: 16px 0 clamp(16px, 2.0833vw, 30px);
+ 
+  overflow: hidden;
+}
+
+.h2o-footer{
+  display: flex;
+  flex-direction: column;
+  grid-gap: clamp(20px, 3.125vw, 45px);
+  position: relative;
+
+  &__top{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: clamp(20px, 2.0833vw, 30px);
+    position: relative;
+
+    &::before{
+      border-bottom: 1px solid var(--br-d);
+      content: '';
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      bottom: calc((clamp(20px, 3.125vw, 45px) /2) * -1);
+      height: 1px;
+      width: 100vw;
+  }
+
+  @include tablet{
+    padding-bottom: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    .h2o-footer-company{
+      grid-column: 1/-1;
+      grid-row: 2;
+    }
+  }
+  }
+
+  &__btns{
+    display: flex;
+    align-items: center;
+    grid-gap: 5px;
+
+    @include tablet{
+      justify-content: flex-end;
+    }
+  }
+
+  &__copyright{
+    color: rgba(var(--cl-e),1.0);
+    font-size: 9px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    line-height: 12px;
+    align-self: flex-start;
+
+    @include mobile{
+      order: 2;
+      align-self: center;
+    }
+  }
+
+  &__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    grid-gap: 20px;
+    width: 100%;
+    position: relative;
+
+     &::before{
+        border-bottom: 1px solid var(--br-d);
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: calc((clamp(20px, 3.125vw, 45px) /2) * -1);
+        height: 1px;
+        width: 100vw;
+    }
+
+    @include mobile{
+      flex-direction: column;
+      grid-gap: 10px;
+    }
+
+    .h2o-footer-info__icon{
+      filter: none;
+    }
+  }
+
+  .h2o-logo{
+    position: relative;
+    &:before{
+      content: '';
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateX(5%);
+      right: 0;
+      padding: 0 20px;
+      display: block;
+      height: 1px;
+      background: linear-gradient(90deg,rgba(255,255,255,.2) 9.92%,rgba(0,0,0,0) 100%);
+    }
+    .h2o-icon-logo{
+    width: 48px;
+    height: 21px;
+  }
+}
+}

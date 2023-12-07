@@ -1,0 +1,33 @@
+.h2o-game-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+
+  &__image {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    img {
+      transition: 0.3s ease-in-out;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &:hover {
+    .h2o-game-card__image {
+      img,
+      picture {
+        transform: scale(1.03);
+      }
+    }
+  }
+}

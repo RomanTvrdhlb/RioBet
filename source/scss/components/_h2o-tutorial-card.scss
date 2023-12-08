@@ -24,8 +24,8 @@
         position: absolute;
         left: -25%;
         top: 60px;
-        width: 40.8px;
-        height: 40.8px;
+        width: 41px;
+        height: 41px;
         font-size: 20px;
         color: rgba(var(--cl-a),1.0);
         font-family: var(--font-family);
@@ -34,6 +34,7 @@
         align-items: center;
         justify-content: center;
         background-color: rgba(var(--bg-i),1.0);
+        animation: steps 1.2s ease-in-out infinite;
     }
 
     .h2o-yellow-button{
@@ -45,10 +46,21 @@
     &--disabled{
         .h2o-tutorial-card__amount{
             background: rgba(var(--bg-j),1.0);
+            animation: none;
         }
         .h2o-yellow-button{
             cursor: auto;
             background-color: rgba(var(--bg-g),1.0) !important;
         }
+    }
+}
+
+@keyframes steps {
+    0%{
+        transform: scale(1);
+    }
+
+    25%{
+        transform: scale(1.1);
     }
 }

@@ -1,16 +1,33 @@
 .h2o-games-section{
-    padding-bottom: clamp(20px, 1.6667vw, 24px);
+    padding-bottom: clamp(40px, 4.8921vw, 68px);
     position: relative;
-
 
     &__box{
         display: flex;
         flex-direction: column;
-        grid-gap: 20px;  
+        grid-gap: 12px;  
     }
 
-    .h2o-info-button{
-        margin-top: clamp(5px, 1.3889vw, 20px);
-        align-self: center;
+
+    &__top{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 6px;
+
+        .h2o-search{
+            grid-column: 3/5;
+        }
+
+        @include small-tablet{
+            grid-template-columns: repeat(2, 1fr);
+
+            .h2o-search{
+                grid-column: 1/-1;
+            }
+        }
     }
-}
+    
+    .h2o-main-top{
+        padding-bottom: 6px;
+    }
+}   

@@ -9,7 +9,9 @@ export default {
   overlay: document.querySelector('[data-overlay]'),
   mobileMenu: document.querySelector('.h2o-mobile-menu'),
   burger: document.querySelector('.h2o-burger'),
-  slider: document.querySelector('.splide'),
+  mainSlider: document.querySelector('.h2o-main-slider'),
+  casinoSlider: document.querySelector('.h2o-casino-slider'),
+  jackpotSlider: document.querySelector('.h2o-jackpot-slider'),
   accParrent: [...document.querySelectorAll('[data-accordion-init]')],
 }
 

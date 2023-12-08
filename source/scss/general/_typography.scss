@@ -1,3 +1,62 @@
+// .splide{
+
+//   &__arrows{
+
+//   }
+
+//   &__arrow{
+
+//     &--prev{
+      
+//     }
+//     &--next{
+
+//     }
+//   }
+// }
+
+.h2o-search{
+  width: 100%;
+  padding: 9px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: solid 2px var(--br-b);
+
+  &__input{
+    margin-left: 20px;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    color: rgba(var(--cl-a),1.0);
+
+    &::placeholder{
+      color: rgba(var(--cl-c),1.0);
+    }
+  }
+
+  &__button{
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .2s;
+
+    &:hover{
+      filter: brightness(10);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
 .h2o-main-subtitle {
   font-family: var(--font-family);
   font-weight: 700;

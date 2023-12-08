@@ -9,25 +9,24 @@ body {
   width: 100%;
   min-height: -webkit-fill-available;
   margin: 0 auto;
-
   font-weight: 400;
   font-size: 16px;
   line-height: normal;
   font-family: var(--font-family);
   color:  rgba(var(--cl-b),1.0);
-
   counter-reset: step-counter;
   -webkit-text-size-adjust: 100%;
   // for text resize
 
-  background: var(--body-bg);
-
-  
 }
 
 main {
+  margin: 0 auto;
+  background: var(--body-bg);  
   padding-top: calc(var(--header-height) + 15px);
   min-width: 0 !important;
+  max-width: 1440px;
+  box-shadow: rgba(0,0,0,0.95) 0px -60px 70px 50px;
 
   &.no-padding {
     padding: 0;

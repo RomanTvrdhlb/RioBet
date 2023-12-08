@@ -11,10 +11,14 @@
 
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
   // --------------- default JS variable ---------------
-  --header-height: 47px;
+  --header-height: 68px;
+
+  @include tablet{
+    --header-height: 112px;
+  }
 
 // --------------- default scroll variable ---------------
-  --scrollbar-thumb: #1f2841;
+  --scrollbar-thumb: #0008;
   --scrollbar-track:  #202020;
   --scrollbar-track-hover: #202020;
   --overlay-bg: rgba(0, 0, 0, 0.5);
@@ -28,9 +32,9 @@
   --cl-c: #{HexToRGB(#888)}; // rgba(var(--cl-c),1.0);
   --cl-d: #{HexToRGB(#EDC97F)}; // rgba(var(--cl-d),1.0);
   --cl-e: #{HexToRGB(#C5C5C5)}; // rgba(var(--cl-e),1.0);
+  --cl-f: #{HexToRGB(#E0E0E0)}; // rgba(var(--cl-f),1.0);
 
 
-  --cl-f: #{HexToRGB(#32a2f4)}; // rgba(var(--cl-f),1.0);
   --cl-g: #{HexToRGB(#226ef0)}; // rgba(var(--cl-g),1.0);
 // --------------- default background color variable ---------------
   --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
@@ -44,11 +48,12 @@
   --bg-i: #{HexToRGB(#F11414)}; // rgba(var(--bg-i),1.0);
   --bg-j: #{HexToRGB(#555)}; // rgba(var(--bg-j),1.0);
   --bg-k: #{HexToRGB(#1E1E1E)}; // rgba(var(--bg-k),1.0);
+  --bg-l: #{HexToRGB(#303030)}; // rgba(var(--bg-l),1.0);
 // --------------- default border color color variable ---------------
   --br-a: #EDC97F; // var(--br-a);
+  --br-b: #888; // var(--br-b);
 
-  
-  --br-b: #ffc400; // var(--br-b);
+
   --br-c: #fff; // var(--br-c);
   --br-d: #292c3c; // var(--br-d);
   --br-e: #415C8C; // var(--br-e);

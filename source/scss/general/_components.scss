@@ -1,10 +1,10 @@
 // ----------------- MAIN COMPONENTS -----------------
 @import "components/h2o-main-top.scss";
-
+@import "components/h2o-header-nav";
 
 
 @import "components/h2o-main-box.scss";
-@import "components/h2o-header-nav";
+
 @import "components/h2o-accordion.scss";
 @import "components/h2o-counter.scss";
 
@@ -27,10 +27,10 @@
 // ----------------- GRID COMPONENTS -----------------
 @import "components/h2o-tutorial-list.scss";
 @import "components/h2o-games-list.scss";
-
+@import "components/h2o-partners-list.scss";
 
 @import "components/h2o-social-list.scss";
-@import "components/h2o-footer-company.scss";
+
 @import "components/h2o-footer-info.scss";
 // ----------------- GRID COMPONENTS -----------------
 

@@ -7,6 +7,15 @@ jackpotSlider && new Splide( jackpotSlider, {
   perPage: 4,
   speed:1200,
   gap: 14,
+  pagination:false,
+  arrows:false,
+
+  // mediaQuery: 'min',
+  // breakpoints: {
+	// 	1240: {
+	// 		destroy: true,
+	// 	},
+  // }
   // autoplay: true,
 } ).mount();
 
@@ -15,7 +24,15 @@ casinoSlider && new Splide( casinoSlider, {
   perPage: 5,
   speed:1200,
   gap: 14,
-  // autoplay: true,
+  pagination: false,
+  arrows:false,
+  autoplay: true,
+  // mediaQuery: 'min',
+  // breakpoints: {
+	// 	1240: {
+	// 		destroy: true,
+	// 	},
+  // }
 } ).mount();
 
 mainSlider && new Splide( mainSlider, {
@@ -23,5 +40,6 @@ mainSlider && new Splide( mainSlider, {
   perPage: 1,
   speed:1200,
   gap: 14,
+  pagination: false,
   autoplay: true,
 } ).mount();

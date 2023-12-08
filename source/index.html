@@ -6,6 +6,7 @@
   @include('partials/header.html')
 
   <main>
+    <div class="h2o-main-bg"></div>
     <section class="h2o-first-section">
       <div class="h2o-container">
         <div class="h2o-first-section__box">
@@ -95,9 +96,12 @@
       <div class="h2o-container">
         <div class="h2o-games-section__box">
           <div class="h2o-games-section__top">
-            <button class="h2o-green-button"></button>
-            <button class="h2o-green-button"></button>
-            <button class="h2o-green-button h2o-search"></button>
+            <button class="h2o-api h2o-provider-button">Провайдер<i class="h2o-icon-provider"></i></button>
+            <button class="h2o-api h2o-provider-button">Категория<i class="h2o-icon-arrow"></i></button>
+            <form class="h2o-search">
+              <input type="text" class="h2o-search__input" placeholder="Поиск">
+              <button class="h2o-api h2o-search__button"><i class="h2o-icon-search"></i></button>
+            </form>
           </div>
           <div class="h2o-main-top">
             <h1 class="h2o-main-top__title">Топ Слоты</h1>
@@ -388,6 +392,210 @@
             </li>
           </ul>
 
+          <div class="h2o-games-section__inner">
+            <div class="h2o-main-top">
+              <span class="h2o-main-top__title">Сейчас выигрывают</span>
+            </div>
+
+            <ul class="h2o-winners-list">
+              <li class="h2o-winners-list__item">
+                <div class="h2o-winner-card">
+
+                  <div class="h2o-game-card">
+                    <div class="h2o-game-card__image">
+                      <img width="273" height="182" src="static/img/index/game1.jpg" alt="image">
+                    </div>
+                    <div class="h2o-game-card__wrapp">
+                      <button class="h2o-api h2o-game-card__link"></button>
+                      <span class="h2o-icon-play"></span>
+                      <button class="h2o-api h2o-icon-info"></button>
+                      <button class="h2o-api h2o-icon-like"></button>
+                    </div>
+                  </div>
+                  <p class="h2o-winner-card__text">
+                  <span class="h2o-winner-card__title">Win</span> 
+                  <span class="h2o-winner-card__value">x 16</span>
+                  </p>
+                  
+                  <div class="h2o-main-user">
+                    <div class="h2o-main-user__image">
+                      <img width="48" height="48" src="static/img/index/user1.png" alt="image">
+                    </div>
+                    <span class="h2o-main-user__name">bayzo</span>
+                    <span class="h2o-main-user__total">+ 31.75 <b class="h2o-main-user__currency">$</b></span>
+                  </div>
+                </div>
+              </li>
+              <li class="h2o-winners-list__item">
+                <div class="h2o-winner-card">
+
+                  <div class="h2o-game-card">
+                    <div class="h2o-game-card__image">
+                      <img width="273" height="182" src="static/img/index/game2.jpg" alt="image">
+                    </div>
+                    <div class="h2o-game-card__wrapp">
+                      <button class="h2o-api h2o-game-card__link"></button>
+                      <span class="h2o-icon-play"></span>
+                      <button class="h2o-api h2o-icon-info"></button>
+                      <button class="h2o-api h2o-icon-like"></button>
+                    </div>
+                  </div>
+                  <p class="h2o-winner-card__text">
+                  <span class="h2o-winner-card__title">Win</span> 
+                  <span class="h2o-winner-card__value">x 16</span>
+                  </p>
+                  
+                  <div class="h2o-main-user">
+                    <div class="h2o-main-user__image">
+                      <img width="48" height="48" src="static/img/index/user2.png" alt="image">
+                    </div>
+                    <span class="h2o-main-user__name">eros2</span>
+                    <span class="h2o-main-user__total">+ 22.31 <b class="h2o-main-user__currency">$</b></span>
+                  </div>
+                </div>
+              </li>
+              <li class="h2o-winners-list__item">
+                <div class="h2o-winner-card">
+
+                  <div class="h2o-game-card">
+                    <div class="h2o-game-card__image">
+                      <img width="273" height="182" src="static/img/index/game3.jpg" alt="image">
+                    </div>
+                    <div class="h2o-game-card__wrapp">
+                      <button class="h2o-api h2o-game-card__link"></button>
+                      <span class="h2o-icon-play"></span>
+                      <button class="h2o-api h2o-icon-info"></button>
+                      <button class="h2o-api h2o-icon-like"></button>
+                    </div>
+                  </div>
+                  <p class="h2o-winner-card__text">
+                  <span class="h2o-winner-card__title">Win</span> 
+                  <span class="h2o-winner-card__value">x 16</span>
+                  </p>
+                  
+                  <div class="h2o-main-user">
+                    <div class="h2o-main-user__image">
+                      <img width="48" height="48" src="static/img/index/user1.png" alt="image">
+                    </div>
+                    <span class="h2o-main-user__name">bayzo</span>
+                    <span class="h2o-main-user__total">+ 31.75 <b class="h2o-main-user__currency">$</b></span>
+                  </div>
+                </div>
+              </li>
+              <li class="h2o-winners-list__item">
+                <div class="h2o-winner-card">
+
+                  <div class="h2o-game-card">
+                    <div class="h2o-game-card__image">
+                      <img width="273" height="182" src="static/img/index/game4.jpg" alt="image">
+                    </div>
+                    <div class="h2o-game-card__wrapp">
+                      <button class="h2o-api h2o-game-card__link"></button>
+                      <span class="h2o-icon-play"></span>
+                      <button class="h2o-api h2o-icon-info"></button>
+                      <button class="h2o-api h2o-icon-like"></button>
+                    </div>
+                  </div>
+                  <p class="h2o-winner-card__text">
+                  <span class="h2o-winner-card__title">Win</span> 
+                  <span class="h2o-winner-card__value">x 16</span>
+                  </p>
+                  
+                  <div class="h2o-main-user">
+                    <div class="h2o-main-user__image">
+                      <img width="48" height="48" src="static/img/index/user2.png" alt="image">
+                    </div>
+                    <span class="h2o-main-user__name">eros2</span>
+                    <span class="h2o-main-user__total">+ 22.31 <b class="h2o-main-user__currency">$</b></span>
+                  </div>
+                </div>
+              </li>
+              <li class="h2o-winners-list__item">
+                <div class="h2o-winner-card">
+
+                  <div class="h2o-game-card">
+                    <div class="h2o-game-card__image">
+                      <img width="273" height="182" src="static/img/index/game2.jpg" alt="image">
+                    </div>
+                    <div class="h2o-game-card__wrapp">
+                      <button class="h2o-api h2o-game-card__link"></button>
+                      <span class="h2o-icon-play"></span>
+                      <button class="h2o-api h2o-icon-info"></button>
+                      <button class="h2o-api h2o-icon-like"></button>
+                    </div>
+                  </div>
+                  <p class="h2o-winner-card__text">
+                  <span class="h2o-winner-card__title">Win</span> 
+                  <span class="h2o-winner-card__value">x 16</span>
+                  </p>
+                  
+                  <div class="h2o-main-user">
+                    <div class="h2o-main-user__image">
+                      <img width="48" height="48" src="static/img/index/user1.png" alt="image">
+                    </div>
+                    <span class="h2o-main-user__name">bayzo</span>
+                    <span class="h2o-main-user__total">+ 31.75 <b class="h2o-main-user__currency">$</b></span>
+                  </div>
+                </div>
+              </li>
+              <li class="h2o-winners-list__item">
+                <div class="h2o-winner-card">
+
+                  <div class="h2o-game-card">
+                    <div class="h2o-game-card__image">
+                      <img width="273" height="182" src="static/img/index/game3.jpg" alt="image">
+                    </div>
+                    <div class="h2o-game-card__wrapp">
+                      <button class="h2o-api h2o-game-card__link"></button>
+                      <span class="h2o-icon-play"></span>
+                      <button class="h2o-api h2o-icon-info"></button>
+                      <button class="h2o-api h2o-icon-like"></button>
+                    </div>
+                  </div>
+                  <p class="h2o-winner-card__text">
+                  <span class="h2o-winner-card__title">Win</span> 
+                  <span class="h2o-winner-card__value">x 16</span>
+                  </p>
+                  
+                  <div class="h2o-main-user">
+                    <div class="h2o-main-user__image">
+                      <img width="48" height="48" src="static/img/index/user2.png" alt="image">
+                    </div>
+                    <span class="h2o-main-user__name">eros2</span>
+                    <span class="h2o-main-user__total">+ 22.31 <b class="h2o-main-user__currency">$</b></span>
+                  </div>
+                </div>
+              </li>
+              <li class="h2o-winners-list__item">
+                <div class="h2o-winner-card">
+
+                  <div class="h2o-game-card">
+                    <div class="h2o-game-card__image">
+                      <img width="273" height="182" src="static/img/index/game4.jpg" alt="image">
+                    </div>
+                    <div class="h2o-game-card__wrapp">
+                      <button class="h2o-api h2o-game-card__link"></button>
+                      <span class="h2o-icon-play"></span>
+                      <button class="h2o-api h2o-icon-info"></button>
+                      <button class="h2o-api h2o-icon-like"></button>
+                    </div>
+                  </div>
+                  <p class="h2o-winner-card__text">
+                  <span class="h2o-winner-card__title">Win</span> 
+                  <span class="h2o-winner-card__value">x 16</span>
+                  </p>
+                  
+                  <div class="h2o-main-user">
+                    <div class="h2o-main-user__image">
+                      <img width="48" height="48" src="static/img/index/user1.png" alt="image">
+                    </div>
+                    <span class="h2o-main-user__name">bayzo</span>
+                    <span class="h2o-main-user__total">+ 31.75 <b class="h2o-main-user__currency">$</b></span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -395,6 +603,7 @@
     <section class="h2o-casino-section">
       <div class="h2o-container">
         <div class="h2o-casino-section__box">
+          
           <div class="h2o-casino-section__inner">
             <div class="h2o-main-top">
               <h3 class="h2o-main-top__title">Джекпоты</h3>
@@ -586,6 +795,287 @@
 
           </div>
 
+        </div>
+      </div>
+    </section>
+
+    <section class="h2o-partners-section">
+      <div class="h2o-container">
+        <div class="h2o-partners-section__box">
+          <ul class="h2o-partners-list">
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-netent">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-amatic">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-micro">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-bet">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-evolution">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-habanero">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-isoft">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-gameart">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-evoplay">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-ygg">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-endorphin">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-ezug">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-playson">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-streak">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-prag">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-quick">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-amusnet">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-tom">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-playngo">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-tiger">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-apollo">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-agaming">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-btg">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-booming">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-oaks">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-edict">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-elk">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-high">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-nolimit">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-onegaming">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-patagonia">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-pg">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-platinus">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-playtech">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-push">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-relax">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-spinomenal">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-stake">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-thunderkick">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-casino">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-wazdan">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-mascot">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-bf">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-belatra">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-bgaming">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-genii">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-fugaso">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-leander">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-pariplay">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-spade">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-real">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-vivo">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-cool">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-ctgaming">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-gamzix">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-kagaming">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-kalamba">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-revolver">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-smartsoft">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-spinmatic">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-wm">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-spribe">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-onlyplay">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-novo">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-eurasian">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-upgaming">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-twain">
+              </button>
+            </li>
+            <li class="h2o-partners-list__item">
+              <button class="h2o-partners-list__icon h2o-icon-hacksaw">
+              </button>
+            </li>
+          </ul>
         </div>
       </div>
     </section>

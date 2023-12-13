@@ -34,6 +34,60 @@
     display: block;
   }
 
+  &-cup{
+    background-image: url(../img/index/icons.png);
+    width: 26px;
+    height: 26px;
+    background-position: 0px -28px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  
+  &-evoygg{
+    background-image: url(../img/index/icons.png);
+    background-position: -112px -120px;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &-hack{
+    background-image: url(../img/index/icons.png);
+    background-position: 0px -148px;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+  
+  &-spino{
+    background-image: url(../img/index/icons.png);
+    background-position: -224px -204px;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &-relaxgaming{
+    background-image: url(../img/index/icons.png);
+    background-position: -84px -204px;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  &-thunder{
+    background-image: url(../img/index/icons.png);
+    background-position: -259px -84px;
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
   &-provider{
     background-image: url(../img/sprite/icon9.svg);
     width: 24px;
@@ -54,6 +108,128 @@
     display: block;
   }
 
+  &-vip{
+    background-image: url(../img/sprite/vip.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  &-vip{
+    background-image: url(../img/sprite/vip.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  
+  &-crown{
+    background-image: url(../img/sprite/crown.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  &-timer{
+    background-image: url(../img/sprite/timer.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  &-case{
+    background-image: url(../img/sprite/case.svg);
+    width: 18px;
+    height: 18px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  &-cp{
+    background-image: url(../img/sprite/cp.svg);
+    width: 26px;
+    height: 26px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+  }
+
+  &-user{
+    background-image: url(../img/sprite/user.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  &-cupwhite{
+    background-image: url(../img/sprite/cup2.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  &-riobet{
+    background-image: url(../img/sprite/riobet.svg);
+    width: 66px;
+    height: 22px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  &-cancel{
+    background-image: url(../img/sprite/cancel.svg);
+    width: 16px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  
+  &-gold{
+    background-image: url(../img/sprite/gold.svg);
+    width: 24px;
+    height: 24px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
+
+  
+  &-arrowgold{
+    background-image: url(../img/sprite/arrowgold.svg);
+    width: 48px;
+    height: 25px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+  }
   
   &-arrow{
     background-image: url(../img/sprite/arrow-b.svg);

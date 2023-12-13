@@ -21,6 +21,7 @@
     overflow: hidden;
     width: 100%;
     height: 100%;
+    display: flex;
 
     img {
       width: 100%;
@@ -44,10 +45,23 @@
 
     &-play{
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
+      inset: 0;
+      margin: auto;
     }
+  }
+
+  &__producer{
+    position: absolute;
+    right: 3px;
+    bottom: 4px;
+    z-index: 1;
+  }
+
+  &__cup{
+    position: absolute;
+    left: 3px;
+    bottom: 4px;
+    z-index: 1;
   }
 
   &__link{
@@ -68,6 +82,7 @@
     background: rgba(var(--bg-b),0.9);
     border-radius: 4px;
     display: none;
+    z-index: 2;
   }
 
   &__provider{
@@ -131,13 +146,15 @@
 
 @keyframes scales {
   0%{
-    transform: scale(1) translate(-50%,-50%);
+    transform: scale(1);
   }
 
   30%{
-    transform: scale(1.1) translate(-50%,-50%);
+    transform: scale(1.1);
   }
   100%{
-    transform: scale(1) translate(-50%,-50%);
+    transform: scale(1);
   }
 }
+
+

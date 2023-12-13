@@ -15,6 +15,18 @@
 //   }
 // }
 
+.h2o-timer{
+  display: flex;
+  align-items: center;
+  grid-gap: 6px;
+
+  &__list{
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+}
+
 .h2o-search{
   width: 100%;
   padding: 9px;

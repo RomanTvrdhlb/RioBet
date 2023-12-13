@@ -19,6 +19,28 @@
 
 }
 
+.h2o-grey-button {
+  font-family: var(--font-family);
+  border-radius: 4px;
+  padding: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 700;
+  background-color:  rgba(var(--bg-n),1.0);
+  color: rgba(var(--cl-g),1.0);
+  transition: .3s;
+  width: 100%;
+
+  &:hover {
+    background-color: rgba(var(--bg-j),1.0);
+  }
+
+}
+
 .h2o-yellow-button {
   font-family: var(--font-family);
   border-radius: 4px;

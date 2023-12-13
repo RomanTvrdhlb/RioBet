@@ -16,7 +16,6 @@
   &:hover {
     background-color: rgba(var(--bg-d),1.0);
   }
-
 }
 
 .h2o-grey-button {
@@ -82,7 +81,26 @@
 
 }
 
+.h2o-red-button {
+  font-family: var(--font-family);
+  border-radius: 4px;
+  padding: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-weight: 700;
+  font-size: clamp(14px, 1.5534vw, 16px);
+  background-color:  rgba(var(--bg-r),1.0);
+  color: rgba(var(--cl-a),1.0);
+  transition: .3s;
 
+  &:hover {
+    background-color: rgba(var(--bg-q),1.0);
+  }
+}
 
 
 

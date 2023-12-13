@@ -18,12 +18,24 @@
 .h2o-timer{
   display: flex;
   align-items: center;
-  grid-gap: 6px;
+  grid-gap: 8px;
 
   &__list{
     display: flex;
     align-items: center;
-    color: #fff;
+    grid-gap: 3px;
+    color: rgba(var(--cl-g),1.0);
+  }
+
+  .h2o-icon-timer{
+    margin-top: -3px;
+  }
+
+  &__text{
+    color:  rgba(var(--cl-a),1.0);
+    font-size: 16px;
+    line-height: normal;
+    font-family: var(--font-family);
   }
 }
 

@@ -13,14 +13,19 @@
         color: rgba(var(--cl-a),1.0);
         line-height: 100%;
         font-size: clamp(14px, 1.1511vw, 16px);
-        transition: all .3s;
-        text-decoration: underline;
-        text-underline-offset: 3px;
-        text-decoration-color: transparent;
 
-        &:hover{
-            text-decoration-color: inherit;
+        i{
+            filter: brightness(2);
         }
 
+        &:hover{
+           color:  rgba(var(--cl-d),1.0);
+
+           i{
+            filter: none;
+           }
+        }
+
+     
     }
 }

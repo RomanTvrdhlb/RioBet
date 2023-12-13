@@ -4,7 +4,7 @@ export default {
   documentEl: document,
   htmlEl: document.documentElement,
   bodyEl: document.body,
-  timers: document.querySelectorAll('.h2o-timer'),
+  timers: document.querySelectorAll('.h2o-timer__list'),
   header: document.querySelector('header'),
   overlay: document.querySelector('[data-overlay]'),
   mobileMenu: document.querySelector('.h2o-mobile-menu'),

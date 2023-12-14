@@ -1,6 +1,8 @@
 html {
   box-sizing: border-box;
   width: 100%;
+
+  height: 100%;
 }
 
 body {
@@ -18,6 +20,9 @@ body {
   -webkit-text-size-adjust: 100%;
   // for text resize
 
+  // height: 100%;
+  // display: flex;
+  // flex-direction: column;
 }
 
 main {
@@ -27,6 +32,8 @@ main {
   min-width: 0 !important;
   max-width: 1440px;
   box-shadow: rgba(0,0,0,0.95) 0px -60px 70px 50px;
+
+  // flex: 1 0 auto;
 
   &.no-padding {
     padding: 0;

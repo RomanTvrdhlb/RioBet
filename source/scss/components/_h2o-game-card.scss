@@ -101,6 +101,7 @@
 }
 
 .h2o-casino-card{
+  // width: clamp(132px, 18.9928vw, 264px);
   border-radius: 16px;
   &::before{
     content: '';

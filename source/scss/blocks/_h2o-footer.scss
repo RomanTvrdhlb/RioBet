@@ -1,7 +1,9 @@
 footer{
-  padding: 17px 0;
+  padding: clamp(10px, 1.223vw, 17px) 0;
   background-color: rgba(var(--bg-b),1.0);
   overflow: hidden;
+
+  // flex: 0 0 auto;
 }
 
 .h2o-footer{
@@ -24,6 +26,10 @@ footer{
     width: fit-content;
     i{
       margin-right: 9px;
+    }
+
+    @include mobile{
+      flex-direction: column;
     }
   }
 

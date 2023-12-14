@@ -1,19 +1,54 @@
-// .splide{
+.h2o-casino-slider, .h2o-jackpot-slider{
+  .splide{
 
-//   &__arrows{
+    &__arrows{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      grid-gap: 12px;
+      position: absolute;
+      right: 0;
+      top: calc(clamp(16px, 1.295vw, 18px) * -1);
+      transform: translateY(-100%);
+    }
 
-//   }
+    &__arrow{
+      background: rgba(255,255,255,0.16);
+      border-radius: 5px;
+      width: 32px;
+      height: 32px;
+      position: relative;
+      top: initial;
+      left: initial;
+      right: initial;
+      transform: none;
+      opacity: 1;
 
-//   &__arrow{
+      svg{
+        display: none;
+      }
 
-//     &--prev{
-      
-//     }
-//     &--next{
+      &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 14px;
+        height: 14px;
+        transform: translate(-50%, -50%);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' id='arrow-long' viewBox='0 0 24 24'%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M2 12c0 .552.497 1 1.111 1H20.89c.614 0 1.111-.448 1.111-1s-.497-1-1.111-1H3.11C2.497 11 2 11.448 2 12z' clip-rule='evenodd'/%3E%3Cpath fill='%23fff' fill-rule='evenodd' d='M12.338 19.694c.45.408 1.181.408 1.632 0l7.692-6.956a.974.974 0 0 0 0-1.476L13.97 4.306a1.242 1.242 0 0 0-1.632 0 .974.974 0 0 0 0 1.475L19.214 12l-6.876 6.219a.974.974 0 0 0 0 1.475z' clip-rule='evenodd'/%3E%3C/svg%3E");
+      }
+      &--prev{
+        &::before{
+          transform: translate(-50%, -50%) scaleX(-1);
+        }
+      }
+      &--next{
 
-//     }
-//   }
-// }
+      }
+    }
+  }
+}
 
 .h2o-timer{
   display: flex;
@@ -73,60 +108,44 @@
   }
 }
 
-
-
-
-
-
-
-
-
-.h2o-main-subtitle {
-  font-family: var(--font-family);
-  font-weight: 700;
-  line-height: 100%;
-  color: rgba(var(--cl-a),1.0);
-  font-size: 14px;
-}
-
 .h2o-main-title {
   color: rgba(var(--cl-a), 1);
   font-family: var(--font-family);
-  font-size: clamp(18px, 1.875vw, 27px);
+  font-size: clamp(18px, 1.8705vw, 26px);
   line-height: 120%;
   font-weight: 700;
-  padding-left: 19px;
   position: relative;
-
-  &::before{
-    position: absolute;
-    content: '';
-    left: 0;
-    width: 4px;
-    background: linear-gradient(91deg,#0095ff,#0855c4);
-    box-shadow: 0 6px 22px #056dda4d;
-    height: 100%;
-    border-radius: 12px;
-  }
-
+  display: inline-flex;
+  align-items: center;
+  grid-gap: 6px;
 }
 
 .h2o-main-link{
   color: rgba(var(--cl-g),1.0);
   text-decoration: underline;
   font-family: var(--font-family);
-  font-size: 14px;
+  font-size: clamp(14px, 1.1511vw, 16px);
+  line-height: 110%;
   font-weight: 400;
   transition: all .3s;
   &:hover{
-    color: rgba(var(--cl-f),1.0);
+    opacity: .8;
   }
+}
+
+.h2o-main-subtitle {
+  font-family: var(--font-family);
+  font-weight: 700;
+  line-height: 100%;
+  color: rgba(var(--cl-g),1.0);
+  font-size: clamp(16px, 1.4388vw, 20px);
 }
 
 .h2o-text-list{
   display: flex;
   flex-direction: column;
   padding-left: 26px;
+  grid-gap: 5px;
 
   &__item{
     display: flex;
@@ -137,12 +156,13 @@
 
     &::before{
       content: "";
-      left: -11px;
+      left: -12px;
+      border-radius: 50%;
       position: absolute;
       top: 5px;
-      border-top: 4px solid transparent;
-      border-bottom: 4px solid transparent;
-      border-left: 5px solid var(--br-e);
+      width: 6px;
+      height: 6px;
+      background-color: rgba(var(--bg-j),1.0);
     }
   }
 
@@ -167,23 +187,23 @@
     &::before{
       position: absolute;
       left: 0;
-      top: -2px;
+      top: -3px;
       content: counters(li, '') '.';
       counter-increment: li;
-      font-size: 15px;
+      font-size: clamp(15px, 1.223vw, 17px);
       font-family: var(--font-family2);
-      font-weight: 800;
-      color: rgba(var(--cl-a),1.0);
+      font-weight: 700;
+      color: rgba(var(--cl-g),1.0);
     }
   }
 }
 
 table:not([class]){
-    border-radius: 8px;
+  align-self: center;
+  max-width: 1000px;
 		overflow: hidden;
     width:100%;
 		border-collapse:collapse;
-		padding:5px;
 
     @include mobile{
       display: block;
@@ -203,12 +223,12 @@ table:not([class]){
 
     tbody{
       tr:nth-child(even) td{
-      
-        background: rgba(var(--bg-g),1.0);
+ 
+        background-color: rgba(var(--bg-n),0.3);
       }
     }
    
-    tr{    
+    tr{ 
       @include mobile{
         width: 100%;
       }
@@ -220,8 +240,8 @@ table:not([class]){
         font-family: var(--font-family);
         font-size: clamp(14px, 1.1111vw, 16px);
         font-weight: 700;
-        background-color: rgba(var(--bg-h),1.0);
-        
+        background-color: rgba(var(--bg-n),1.0);
+        border: solid 1px var(--br-b);
         @include mobile{
           width: 100%;
         }
@@ -230,12 +250,11 @@ table:not([class]){
     td {
       text-align:center;
       padding:10px;
-      background:rgba(var(--bg-h),1.0);
       color: rgba(var(--cl-a), 1);
       font-family: var(--font-family);
       font-size: clamp(14px, 1.1111vw, 16px);
       font-weight: 400;
-      background-color: rgba(var(--bg-f),1.0);
+      border: solid 1px var(--br-g);
     }
 }
 

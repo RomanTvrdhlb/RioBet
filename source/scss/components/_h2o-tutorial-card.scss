@@ -11,13 +11,15 @@
         max-width: 160px;
         font-family: var(--font-family);
         text-align: center;
-        padding-top: 30px;
-       
+        min-height: 38px;
+        display: flex;
+        align-items: center;
     }
 
     &__icon{
         position: relative;
         flex-grow: 1;
+        padding-bottom: clamp(15px, 2.1583vw, 30px);
     }
 
     &__amount{

@@ -10,7 +10,7 @@
         align-items: end;
 
         @include laptop{
-            grid-template-columns: 1fr;
+            grid-template-columns: 100%;
 
             .h2o-players-block{
                 display: none;

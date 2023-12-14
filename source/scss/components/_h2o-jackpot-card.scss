@@ -1,5 +1,5 @@
 .h2o-jackpot-card{
-    width: clamp(180px, 24.2446vw, 337px);
+    // width: clamp(180px, 24.2446vw, 337px);
     height: clamp(200px, 27.0504vw, 376px);
     display: grid !important;
     justify-content: center;
@@ -21,6 +21,10 @@
         transition: all .3s;
         border-radius: 16px;
         background: linear-gradient(360deg, #140D0C 51.66%, rgba(34, 8, 8, 0) 100%);
+    }
+
+    @include mobile{
+        min-height: 260px;
     }
 
     &__value{
@@ -55,7 +59,7 @@
     .h2o-api{
         position: absolute;
         bottom: -28%;
-        width: clamp(122px, 16.5468vw, 230px);
+        width: clamp(150px, 16.5468vw, 230px);
         left: 50%;
         transform: translateX(-50%);
         z-index: 3;
@@ -94,6 +98,10 @@
 
             &__value{
                 bottom: 20%;
+
+                @include small-tablet{
+                    bottom: 25%;
+                }
             }
         }
         .h2o-api{

@@ -1,26 +1,34 @@
 .h2o-accordion{
     display: flex;
     flex-direction: column;
-    grid-gap: 10px;
+    border: 1px solid var(--br-a);
+    width: 100%;
 
     &__button{
         width: 100%;
-        padding: 10px;
-        background: linear-gradient(107deg, rgb(64, 0, 209) 0%, rgb(0, 137, 135) 100%);
-        border-radius: 5px;
+        padding: 12px;
+        background: transparent;
         display: flex;
         justify-content: space-between;
         align-items: center;
         transition: all .4s;
-
+       
+        border-bottom: 1px dotted var(--br-g);
         &.active{
+            border-bottom: none;
+            background: rgba(var(--bg-e),1.0);
             .h2o-accordion__icon{
-                transform: scaleY(-1);
+             &:after{
+                transform: rotateZ(90deg);
+             }
+             &:before,&::after{
+                background: #000;
+             }
             }
-        }
 
-        &:hover{
-            background: linear-gradient(107deg, rgb(64, 0, 209) 0%, rgb(0, 137, 135) 80%);
+            .h2o-accordion__title{
+                color:  rgba(var(--cl-b),1.0);
+            }
         }
     }
 
@@ -37,7 +45,8 @@
         display: flex;
         flex-direction: column;
         grid-gap: 15px;
-        padding-top: 10px;
+        padding: 24px 24px 24px 12px;
+        border-bottom: 1px solid var(--br-a);
     }
 
     &__title{
@@ -45,6 +54,7 @@
         font-family: var(--font-family);
         font-size: 16px;
         font-weight: 400;
+        transition: all .4s;
     }
 
     p{

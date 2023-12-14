@@ -12,6 +12,8 @@
   background-color: rgba(var(--bg-c),1.0);
   color: rgba(var(--cl-a),1.0);
   transition: .3s;
+  font-size: clamp(14px, 1.1511vw, 16px);
+  line-height: normal;
 
   &:hover {
     background-color: rgba(var(--bg-d),1.0);
@@ -21,6 +23,8 @@
 .h2o-grey-button {
   font-family: var(--font-family);
   border-radius: 4px;
+  font-size: clamp(14px, 1.1511vw, 16px);
+  line-height: normal;
   padding: 12px;
   text-transform: uppercase;
   text-align: center;
@@ -51,6 +55,8 @@
   justify-content: center;
   position: relative;
   font-weight: 700;
+  font-size: clamp(14px, 1.1511vw, 16px);
+  line-height: normal;
   background-color: rgba(var(--bg-e),1.0);
   color: rgba(var(--cl-b),1.0);
   transition: .3s;

@@ -271,6 +271,29 @@
     display: block;
   }
 
+  &-acc{
+    width: clamp(18px, 1.7266vw, 24px);
+    height: clamp(18px, 1.7266vw, 24px);
+    position: relative;
+    display: flex;
+
+    &::before,&::after{
+      content: '';
+      width: 6px;
+      height: 100%;
+      background: rgba(var(--bg-e),1.0);
+      position: absolute;
+      top: 0;
+      left: 50%;
+      margin-left: -3px;
+      transition: transform 0.2s ease-in-out;
+    }
+
+    &::before{
+      transform: rotateZ(90deg);
+    }
+  }
+
   &-clock{
     background-image: url(../img/sprite/icon.svg);
     background-position: center center;
@@ -278,6 +301,26 @@
     background-size: cover;
     width: 76px;
     height: 96px;
+    display: block;
+  }
+  
+  &-warn{
+    background-image: url(../img/sprite/warn.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 26px;
+    height: 26px;
+    display: block;
+  }
+
+  &-rio{
+    background-image: url(../img/sprite/rio.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
     display: block;
   }
 

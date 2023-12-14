@@ -314,6 +314,16 @@
     display: block;
   }
 
+  &-more{
+    background-image: url(../img/sprite/more.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 34px;
+    height: 34px;
+    display: block;
+  }
+
   &-rio{
     background-image: url(../img/sprite/rio.svg);
     background-position: center center;

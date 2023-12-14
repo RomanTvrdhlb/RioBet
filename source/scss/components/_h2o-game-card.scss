@@ -98,10 +98,36 @@
     padding: 10px;
     z-index: 2;
   }
+
+  &__text{
+    font-size: 16px;
+    color: rgba(var(--cl-a),1.0);
+    font-family: var(--font-family);
+    line-height: normal;
+  }
+
+  &--more{
+    .h2o-game-card__wrapp{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      grid-gap: 15px;
+      border:none;
+      background: rgba(var(--bg-s),0.81);
+      backdrop-filter: blur(3px);
+    }
+
+
+    &:hover{
+      .h2o-game-card__wrapp{
+        background: rgba(var(--bg-s),0.6);
+      }
+    }
+  }
 }
 
 .h2o-casino-card{
-  // width: clamp(132px, 18.9928vw, 264px);
   border-radius: 16px;
   &::before{
     content: '';

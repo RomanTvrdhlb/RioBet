@@ -8,7 +8,6 @@ jackpotSlider && new Splide( jackpotSlider, {
   speed:1200,
   gap: 14,
   pagination:false,
- 
   mediaQuery: 'min',
   breakpoints: {
     280: {
